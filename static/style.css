@@ -1,0 +1,89 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 60em;
+  margin: 1em auto;
+  padding: 0 1em;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.1em;
+  border-bottom: 1px solid #ccc;
+}
+
+#filter-form {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+#query {
+  flex: 1;
+  font-size: 1.1em;
+  padding: 0.3em;
+}
+
+#bulk-actions {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+#matches,
+#selected-list {
+  list-style: none;
+  padding: 0;
+  max-height: 24em;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+#matches li,
+#selected-list li {
+  padding: 0.15em 0.4em;
+}
+
+#matches li:hover,
+#matches li:focus-within {
+  background: #eef;
+}
+
+.selection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selection-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+#submit-form {
+  display: flex;
+  gap: 0.5em;
+}
+
+button {
+  padding: 0.4em 0.8em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 1px;
+}
